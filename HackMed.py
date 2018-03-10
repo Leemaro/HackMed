@@ -24,19 +24,19 @@ def aboutus():
 
     return render_template('about_us.html',replace_me=replace_me)
 
-@app.route('/map_locations',methods=["GET"])
+@app.route('/lab_locations',methods=["GET"])
 def maplocations():
 
     replace_me = "HERE I AM"
 
-    return render_template('map_locations',replace_me=replace_me)
+    return render_template('lab_locations.html',replace_me=replace_me)
 
 @app.route('/your_results',methods=["GET"])
 def yourresults():
 
     replace_me = "HERE I AM"
 
-    return render_template('map_locations',replace_me=replace_me)
+    return render_template('your_results',replace_me=replace_me)
 
 @app.route('/process_data',methods=["POST"])
 def process_data():
