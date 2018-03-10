@@ -102,9 +102,12 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQGhmbJsf6_sy8EokeexWkqfqD8uIO6Zc&callback=initMap">
     </script>
             <div class="col-lg-4"><form method="post" action="{{ url_for('process_data') }}">
+            First name:<div>
             <input type="text" name="First Name" id="First_name">
+            Last name:<div>
             <input type="text" name="Surname" id="Surname">
-            <input type="text" name="Phone Number" id="Phone_number">
+            Phone number:<div>
+            <input type="text" name="Phone Number" id="Phone_number"><div>
             <input type="submit">
         </form></div>
 </div>
