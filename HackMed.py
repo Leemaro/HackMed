@@ -39,6 +39,13 @@ def yourresults():
 
     return render_template('your_results.html',replace_me=replace_me)
 
+@app.route('/your_results_login',methods=["GET"])
+def yourresultslogin():
+
+    replace_me = "HERE I AM"
+
+    return render_template('your_results_login.html',replace_me=replace_me)
+
 @app.route('/process_data',methods=["POST"])
 def process_data():
     name = request.form["name"]
