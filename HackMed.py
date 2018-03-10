@@ -17,12 +17,26 @@ def hackmed():
 
     return render_template('hackmed.html',replace_me=replace_me)
 
-@app.route('/about_us.html',methods=["GET"])
+@app.route('/about_us',methods=["GET"])
 def aboutus():
 
     replace_me = "HERE I AM"
 
     return render_template('about_us.html',replace_me=replace_me)
+
+@app.route('/map_locations',methods=["GET"])
+def maplocations():
+
+    replace_me = "HERE I AM"
+
+    return render_template('map_locations',replace_me=replace_me)
+
+@app.route('/your_results',methods=["GET"])
+def yourresults():
+
+    replace_me = "HERE I AM"
+
+    return render_template('map_locations',replace_me=replace_me)
 
 @app.route('/process_data',methods=["POST"])
 def process_data():
