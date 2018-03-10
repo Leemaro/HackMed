@@ -17,6 +17,13 @@ def hackmed():
 
     return render_template('hackmed.html',replace_me=replace_me)
 
+@app.route('/about_us.html',methods=["GET"])
+def aboutus():
+
+    replace_me = "HERE I AM"
+
+    return render_template('about_us.html',replace_me=replace_me)
+
 @app.route('/process_data',methods=["POST"])
 def process_data():
     name = request.form["name"]
