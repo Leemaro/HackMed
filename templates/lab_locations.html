@@ -42,33 +42,39 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
       <ul class="nav navbar-nav">
-        <li class="active"><a href="http://google.co.uk">Your Results<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Lab Locations</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <li><a href="hackmed.html">Home<span class="sr-only">(current)</span></a></li>
+                      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Results <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">New Results</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="your_results.html">Past Results</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">Reference</a></li>
+
           </ul>
+          <li  class="Our Laboratoies">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Laboratories<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="lab_locations.html">Laboratory Locations</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">Laboratory Reviews</a></li>
+          </ul>
+            <li class="Our Doctors">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Doctors <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Our Doctors</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="#">Doctor Reviews</a></li>
+          </ul>
+          <li><a href="about_us.html">About Us</a></li>
         </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Your Results</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+        <li><a href="#">Contact</a></li>
           </ul>
         </li>
       </ul>
@@ -77,7 +83,7 @@
 </nav>
 <div class="container">
     <div class="jumbotron">
-      <h1>Your Results</h1>
+      <h1>Welcome to ResultRx</h1>
       <p></p>
       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
     </div>
@@ -85,22 +91,6 @@
     <div class="row">
         <div class="col-lg-4">
    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 8.7832, lng: 34.5085};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQGhmbJsf6_sy8EokeexWkqfqD8uIO6Zc&callback=initMap">
-</div>
 </div>
 </body>
 </html>
