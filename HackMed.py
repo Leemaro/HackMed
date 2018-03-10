@@ -48,11 +48,12 @@ def yourresultslogin():
 
 @app.route('/process_data',methods=["POST"])
 def process_data():
-    details = request.form["name"]
+    details = request.form["details"]
+    name = request.form["name"]
     print(details)
     #nexmo python message api
     #need to add other inputs than name
-    client.send_message({'from' : "ResultsRx", 'to' : details, "text" : "Your results are ready, you are not dead"})
+    client.send_message({'from' : "ResultsRx", 'to' : details, "text" : name + ", your results are ready, you are not dead" })
     return render_template('hackmed_response.html',name=details)
 
 
