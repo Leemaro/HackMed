@@ -5,6 +5,7 @@ client = nexmo.Client(key="c9d92ff9", secret="KAsgFogaEQgcOu56")
 
 app = Flask(__name__)
 
+app.debug = True
 
 @app.route('/')
 def hello_world():
