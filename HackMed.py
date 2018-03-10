@@ -36,7 +36,7 @@ def yourresults():
 
     replace_me = "HERE I AM"
 
-    return render_template('your_results',replace_me=replace_me)
+    return render_template('your_results.html',replace_me=replace_me)
 
 @app.route('/process_data',methods=["POST"])
 def process_data():
