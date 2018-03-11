@@ -43,11 +43,12 @@ def technicians():
 def process_data():
     details = request.form["details"]
     name = request.form["name"]
-    print(details)
+    type = request.form["type"]
     #nexmo python message api
     #need to add other inputs than name
-    client.send_message({'from' : "ResultsRx", 'to' : details, "text" : name + ", your results are ready, you are not dead" })
-    return render_template('hackmed_response.html',name=details)
+    client.send_message({'from' : "ResultsRx", 'to' : details, "text" : name + ", your " + type + " test results are ready, action is required, contact your GP." + \
+                         " View online at: www.domain.com/hackmed/your_results"})
+    return render_template('hackmed_response.html',name=name, details=details)
 
 
 if __name__ == '__main__':
