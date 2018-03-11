@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,10 +16,9 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/style_about.css">
 
 </head>
-
 <body>
 
 <nav class="navbar navbar-default">
@@ -40,18 +38,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav">
-        <li class="active"><a href="hackmed">Home<span class="sr-only">(current)</span></a></li>
-                      <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Results <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">New Results</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="your_results">Past Results</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Reference</a></li>
-
-          </ul>
-          <li class="Our Laboratories">
+        <li><a href="hackmed">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="your_results">Your Results</a></li>
+          <li class="Our Laboratoies">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Laboratories<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="lab_locations">Laboratory Locations</a></li>
@@ -65,28 +54,36 @@
              <li role="separator" class="divider"></li>
             <li><a href="#">Doctor Reviews</a></li>
           </ul>
-          <li><a href="about_us">About Us</a></li>
+          <li class="active"><a href="#">About Us</a></li>
         </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Contact</a></li>
-        <li><a href="technicians">Technicians</a></li>
+         <li class="active"><a href="technicians">Technicians</a></li>
           </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
+    
+
   </div><!-- /.container-fluid -->
-</nav>
-<div class="container">
-    <div class="jumbotron" id="jumbotron1" style="background: url('lab-tests.jpg') no-repeat center right;">
-        <h1>ResultsRx</h1>
-        <h2 id="moto">Your partner in efficient diagnostics and treatment</h2>
-      <p></p>
+          <div class="row">
+            <div>
+                <ul>
+                <form method="post" action="{{ url_for('process_data') }}" style="text-align: center;">
+                    <p>Name:</p>
+                     <li></p><input type="text" name="name" id="nameInput" placeholder="Name" required></li>
+                     <li></li>
+                     <li><p>Phone Number:</p> </li>
+                     <li><input type="text" name="details" id="numberInput" placeholder="Phone Number" required></li>
+                     <li></li>
+                     <li><p>Test Type:</p><input type="text" name="type" id="testInput" placeholder="Test Type" required></li>
+                     <li></li>
+                    <input type="submit">
+                </form>
+                </ul>
+            </div>
     </div>
-</div>
-
-
-
 </body>
 </html>
