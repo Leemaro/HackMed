@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import nexmo
 
-client = nexmo.Client(key="c9d92ff9", secret="KAsgFogaEQgcOu56",)
+client = nexmo.Client(key="c9d92ff9", secret="KAsgFogaEQgcOu56", application_id='c3b02bbb-f404-47be-a2b1-9fe52ca90992', private_key='private.key')
 
 app = Flask(__name__)
 
