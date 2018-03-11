@@ -16,3 +16,22 @@
 #moto {
     width: 551px;
 }
+
+#ourfeatures {
+    font-size: 40px; /* Increase font-size */
+    padding: 20px 40px 12px 40px; /* Add some padding */
+    border: 1px solid #ffb830; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#banner-image {
+    background: rgba(14,44,135,.8);
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    min-height: 65px;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: min-height .5s cubic-bezier(0,1.21,.58,1);
+}
