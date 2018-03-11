@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ResultsRx</title>
+    
 <style>
        #map {
         height: 400px;
@@ -24,7 +25,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-</head>
+
+    <link rel= "stylesheet" type= "text/css" href= "static/css/style_results.css">
 <body>
 
 <nav class="navbar navbar-default">
@@ -74,10 +76,30 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div class="container">
-    <div class="jumbotron">
-      <h1>ResultsRx</h1>
-        <h2>I hope You'll live</h2>
+      <h2>Results:</h2>
+      <p></p>       
+<input type="text" id="myInput" onkeyup="testsearch()" placeholder="Search for test..">
+<table id="Table">
+  <tr class="header">
+    <th style="width: 60%;">Test Type:</th>
+    <th style="width: 40%;">Result</th>
+  </tr>
+  <tr>
+    <td>Test 1</td>
+    <td>Result 1</td>
+  </tr>
+  <tr>
+    <td>Test 2</td>
+    <td>Result 2</td>
+  </tr>
+  <tr>
+    <td>Test 3</td>
+    <td>Result 3</td>
+  </tr>
+  <tr>
+    <td>Test 4</td>
+    <td>Result 4</td>
+  </tr>
+</table>
       <p></p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-    </div>
 </div>
