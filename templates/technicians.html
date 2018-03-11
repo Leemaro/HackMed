@@ -54,7 +54,7 @@
              <li role="separator" class="divider"></li>
             <li><a href="#">Doctor Reviews</a></li>
           </ul>
-          <li class="active"><a href="#">About Us</a></li>
+          <li><a href="#">About Us</a></li>
         </li>
       </ul>
 
@@ -69,17 +69,20 @@
 
   </div><!-- /.container-fluid -->
           <div class="row">
-            <div>
+            <div >
                 <ul>
-                <form method="post" action="{{ url_for('process_data') }}" style="text-align: center;">
+                    <h2>Submit Patient Notification</h2>
+                    <p></p>
+                <class="col-lg-5" form method="post" action="{{ url_for('process_data') }}" >
                     <p>Name:</p>
-                     <li></p><input type="text" name="name" id="nameInput" placeholder="Name" required></li>
-                     <li></li>
-                     <li><p>Phone Number:</p> </li>
-                     <li><input type="text" name="details" id="numberInput" placeholder="Phone Number" required></li>
-                     <li></li>
-                     <li><p>Test Type:</p><input type="text" name="type" id="testInput" placeholder="Test Type" required></li>
-                     <li></li>
+                     </p><input type="text" name="name" id="nameInput" placeholder="Name" required>
+                     <p></p>
+                     <p>Phone Number:</p>
+                     <input type="text" name="details" id="numberInput" placeholder="Phone Number" required>
+                     <p></p>
+                     <p>Test Type:</p>
+                     <input type="text" name="type" id="testInput" placeholder="Test Type" required></li>
+                     <p></p>
                     <input type="submit">
                 </form>
                 </ul>
