@@ -29,6 +29,8 @@ def yourresults():
 
 @app.route('/your_results_login',methods=["GET"])
 def yourresultslogin():
+    #code to make table progromatic
+
     return render_template('your_results_login.html')
 
 @app.route('/contact',methods=["GET"])
@@ -55,6 +57,8 @@ def call_doctor():
     print("Calling Doctor")
     client.create_call({'to' : [{'type': 'phone', 'number': 447923978877}], 'from': {'type': 'phone', 'number': 447520660907},'answer_url': ['https://raw.githubusercontent.com/Phyll25/ncco-examples/gh-pages/talk.json']})
     return 'Calling Doctor'
+
+
 
 
 if __name__ == '__main__':

@@ -81,30 +81,71 @@
 <input type="text" id="myInput" onkeyup="testsearch()" placeholder="Search for test..">
 <table id="Table">
   <tr class="header">
+    <th style="width: 60%;">Test Type</th>
+    <th style="width: 40%;">Score</th>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td>142 mg/dL</td>
+    <th style="width: 60%;">Test Type:</th>
+    <th style="width: 40%;">Result</th>
+      <th style="...">Action:</th>      
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td>127 mg/dL</td>
     <th style="width: 60%;">Test Type:</th>
     <th style="width: 40%;">Result</th>
       <th style="...">Action:</th>
   </tr>
   <tr>
+    <td>Cholesterol</td>
+    <td>130 mg/dL</td>
     <td>Test 1</td>
     <td>Result 1</td>
       <td>Action not required</td>
   </tr>
   <tr>
+    <td>Cholesterol</td>
+    <td>110 mg/dL</td><
     <td>Test 2</td>
     <td>Result 2</td>
       <td><button type="submit"><a href="calling">Call Doctor</button></td>
   </tr>
   <tr>
+    <td>Blood Urea Nitrogen</td>
+    <td>7 mg/dL</td><
     <td>Test 3</td>
     <td>Result 3</td>
       <td>Action not required</td>
   </tr>
   <tr>
+    <td>Blood Urea Nitrogen</td>
+    <td>9 mg/dL</td><
     <td>Test 4</td>
     <td>Result 4</td>
       <td>Action not required</td>
   </tr>
+<script>
+function testsearch() {
+      var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("Table");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 </table>
       <p></p>
 </div>
