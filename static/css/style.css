@@ -3,7 +3,7 @@
 }
 
 #jumbotron1{
-    background-image: url('../lab-tests.jpg') ;
+    background-image: url('static/images/lab-tests.jpg') ;
     background-position-x: right;
     text-align: left;
 }

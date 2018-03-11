@@ -67,13 +67,12 @@
     </div><!-- /.navbar-collapse -->
     
 
-  </div><!-- /.container-fluid -->
+  <div><!-- /.container-fluid -->
           <div class="row">
             <div >
-                <ul>
                     <h2>Submit Patient Notification</h2>
                     <p></p>
-                <class="col-lg-5" form method="post" action="{{ url_for('process_data') }}" >
+                    <form class="col-lg-5" form method="post" action="{{ url_for('process_data') }}">
                     <p>Name:</p>
                      </p><input type="text" name="name" id="nameInput" placeholder="Name" required>
                      <p></p>
@@ -87,6 +86,8 @@
                 </form>
                 </ul>
             </div>
-    </div>
+          </div>
+  </div>
+
 </body>
 </html>
