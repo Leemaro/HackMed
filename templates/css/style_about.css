@@ -3,9 +3,9 @@
 }
 
 #jumbotron1{
-    background-image: url('../lab-tests.jpg') ;
-    background-position-x: right;
-    text-align: left;
+    image-orientation: url('../ResultsRx.png') ;
+    background-position-x: ;
+    text-align: center;
 }
 
 #map {
