@@ -52,6 +52,16 @@ def process_data():
                          " View online at: www.domain.com/hackmed/your_results"})
     return render_template('hackmed_response.html',name=name, details=details)
 
+@app.route('/calling')
+def call_doctor():
+    print("Calling Doctor")
+    return 'Calling Doctor'
+    client.create_call({
+        'to' : [{'type': 'phone', 'number': 447923978877}],
+        'from': {'type': 'phone', 'number': 447520660907},
+        'answer_url': ['https://developer.nexmo.com/ncco/tts.json']
+    })
+
 
 
 
