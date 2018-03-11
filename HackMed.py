@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import nexmo
 
-client = nexmo.Client(key="c9d92ff9", secret="KAsgFogaEQgcOu56")
+client = nexmo.Client(key="c9d92ff9", secret="KAsgFogaEQgcOu56",)
 
 app = Flask(__name__)
 
@@ -53,12 +53,8 @@ def process_data():
 @app.route('/calling')
 def call_doctor():
     print("Calling Doctor")
+    client.create_call({'to' : [{'type': 'phone', 'number': 447923978877}], 'from': {'type': 'phone', 'number': 447520660907},'answer_url': ['https://raw.githubusercontent.com/Phyll25/ncco-examples/gh-pages/talk.json']})
     return 'Calling Doctor'
-    client.create_call({
-        'to' : [{'type': 'phone', 'number': 447923978877}],
-        'from': {'type': 'phone', 'number': 447520660907},
-        'answer_url': ['https://developer.nexmo.com/ncco/tts.json']
-    })
 
 
 if __name__ == '__main__':
