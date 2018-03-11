@@ -29,6 +29,8 @@ def yourresults():
 
 @app.route('/your_results_login',methods=["GET"])
 def yourresultslogin():
+    #code to make table progromatic
+
     return render_template('your_results_login.html')
 
 @app.route('/contact',methods=["GET"])
@@ -49,6 +51,8 @@ def process_data():
     client.send_message({'from' : "ResultsRx", 'to' : details, "text" : name + ", your " + type + " test results are ready, action is required, contact your GP." + \
                          " View online at: www.domain.com/hackmed/your_results"})
     return render_template('hackmed_response.html',name=name, details=details)
+
+
 
 
 if __name__ == '__main__':
